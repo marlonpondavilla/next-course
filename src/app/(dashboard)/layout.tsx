@@ -7,6 +7,8 @@ const navLinks = [
   { name: "About", href: "/about" },
   { name: "Products", href: "/products" },
   { name: "Contact", href: "/contact" },
+  { name: "Article1", href: "/articles/breaking-news-123?lang=en" },
+  { name: "Article2", href: "/articles/breaking-news-123?lang=fr" },
 ]
 
 export default function DashboardLayout({

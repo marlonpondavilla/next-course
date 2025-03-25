@@ -25,5 +25,6 @@ export default function ComplexDashboardLayout({
           <div className="flex flex-1">{notification}</div>
         </div>
     </div>
-  ) : login;
+    // conditionally render login parallel route (@login)
+  ) : login; 
 }

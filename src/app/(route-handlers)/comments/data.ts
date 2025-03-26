@@ -1,14 +1,14 @@
 export const commentsData = [
   {
     id: 1,
-    text: 'This is a comment'
+    text: 'This is first comment'
   },
   {
     id: 2,
-    text: 'This is another comment'
+    text: 'This is second comment'
   },
   {
     id: 3,
-    text: 'This is yet another comment'
+    text: 'This is third comment'
   }
 ]

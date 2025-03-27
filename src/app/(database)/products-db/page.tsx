@@ -1,7 +1,6 @@
 import { getProducts } from "@/prisma-db"
 import { Decimal } from "@prisma/client/runtime/client";
 
-
 type Product = {
   id: number;
   title: string;

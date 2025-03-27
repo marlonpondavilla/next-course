@@ -13,7 +13,7 @@ datasource db {
 model Product {
   id          Int      @id @default(autoincrement())
   title       String
-  price       Int  
+  price       BigInt  
   description String?  
 }
 

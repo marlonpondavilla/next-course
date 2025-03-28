@@ -1,7 +1,6 @@
 "use client";
 import { useOptimistic } from "react";
 import { deleteProductAction } from "@/actions/products";
-import { getProducts } from "@/prisma-db"
 import Link from "next/link";
 
 export type Product = {

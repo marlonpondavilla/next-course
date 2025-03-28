@@ -3,6 +3,7 @@
 import Submit from "@/components/button";
 import { useActionState } from "react";
 import { FormState, createProduct } from "@/actions/products";
+import { Search } from "@/components/search";
 
 export default function AddProductPage(){
 
@@ -16,6 +17,8 @@ export default function AddProductPage(){
   );  
 
   return (
+    <>
+      <Search />
     <form action={formAction}>
       <div className='flex flex-col items-center justify-center h-screen space-y-2'>
         <h2>{isPending ? "Submitting the Form" : "User Form"}</h2>
@@ -49,5 +52,6 @@ export default function AddProductPage(){
         <Submit />
       </div>
     </form>
+    </>
   )
 }

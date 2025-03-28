@@ -1,5 +1,5 @@
+import { deleteProductAction } from "@/actions/products";
 import { getProducts } from "@/prisma-db"
-import { Decimal } from "@prisma/client/runtime/client";
 import Link from "next/link";
 
 export type Product = {
@@ -22,6 +22,9 @@ export default async function ProductDBPage(){
             </h2>
             <p className="text-sm">{product.description}</p>
             <p className="text-base text-blue-400">P{product.price.toString()}</p>
+            <form action={deleteProductAction.bind(null, product.id)}>
+              <button className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-400">Delete</button>
+            </form>
           </li>
         ))}
       </ul>

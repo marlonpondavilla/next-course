@@ -2,6 +2,7 @@
 import { useOptimistic } from "react";
 import { deleteProductAction } from "@/actions/products";
 import Link from "next/link";
+import Form from "next/form";
 
 export type Product = {
   id: number;
@@ -34,9 +35,9 @@ export function ProductDetail({products}: {products: Product[]}){
             </h2>
             <p className="text-sm">{product.description}</p>
             <p className="text-base text-blue-400">P{product.price.toString()}</p>
-            <form action={removeProductById.bind(null, product.id)}>
+            <Form action={removeProductById.bind(null, product.id)}>
               <button className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-400">Delete</button>
-            </form>
+            </Form>
           </li>
         ))}
       </ul>
